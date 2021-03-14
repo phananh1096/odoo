@@ -24,6 +24,7 @@ class Aspire360(http.Controller):
             return http.request.render('aspire360_measures.v_index')
         else:
             return http.request.render('aspire360_measures.e_index')
+            
         # print("User uid: ", self.env.user.name)
         #TODO: Apply filter to check based on id?
         # Validation: Check if user id exists within tables. If not, redirect to setup.
